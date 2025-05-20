@@ -7,7 +7,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .video-info-grid {
@@ -16,11 +16,11 @@
 }
 
 .pp {
-  width: 40px;
+  width: 36px;
   border-radius: 50px;
 }
 .thumbnail-row {
-  margin-bottom: 13px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -38,18 +38,30 @@
   column-gap: 16px;
   row-gap: 35px;
 }
+@media (max-width: 800px) {
+  .videogrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 801px) and (max-width: 999px) {
+  .videogrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .videogrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .video-time {
   background-color: black;
   color: white;
   position: absolute;
   bottom: 10px;
   right: 8px;
-  font-family: Roboto, Arial;
+
   font-size: 12px;
   font-weight: 400;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px;
   border-radius: 4px;
 }
